@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 7vw;
+    letter-spacing: 2px;
+    z-index: 9;
+    mix-blend-mode: difference;
+
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(70, 65, 65);
+    position: relative;
+}
+.elem{
+    width: 100%;
+    height: 120px;
+    border-bottom: 2px solid olive;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  user-select: none;
+
+}
+.elem img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute; 
+    opacity: 0;
+    
+    transform: translate(-50%);
+    transition: all .3s linear;
+}
